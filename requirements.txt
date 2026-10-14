@@ -1,0 +1,23 @@
+# Python 3.11 or 3.12 recommended (works on Apple Silicon M1/M2/M3)
+# CPU-only PyTorch: small download, works on Mac M1 and on Streamlit Community Cloud
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+# --- LlamaIndex (document ingestion, indexing, retriever / query engine) ---
+llama-index-core>=0.12
+llama-index-readers-file>=0.4
+llama-index-embeddings-huggingface>=0.5
+sentence-transformers>=3.0
+pypdf>=5.0
+# --- LangChain (LLM integration, prompts, chains/runnables, output parsing) ---
+langchain>=1.0
+langchain-core>=1.0
+langchain-groq>=1.0
+langchain-ollama>=1.0
+langchain-google-genai>=2.0
+# --- Web data + app + notebook ---
+requests>=2.31
+beautifulsoup4>=4.12
+python-dotenv>=1.0
+pydantic>=2.7
+streamlit>=1.40
+ipykernel
